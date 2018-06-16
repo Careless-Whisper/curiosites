@@ -5,6 +5,7 @@
 <p><%= @comment %></p>
 
 <h2>Ses curiosités</h2>
-<% @curiosites.each do |curiosity| %>
-    <p> - <%= curiosity %></p>
+<% @my_curiosities.each do |curiosity| %>
+    <p> - <%= curiosity.name %></p>
+    <img src="<%= curiosity.image_url %>"></img>
     <% end %>
